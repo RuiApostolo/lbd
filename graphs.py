@@ -126,6 +126,13 @@ yearly.update_layout(
 yearly.write_html("2022.html")
 # yearly.show()
 
+yearly_movies.to_csv(
+    "2022_avg.txt",
+    sep='\t',
+    columns=["date", "length", "average"],
+    index=False,
+)
+
 
 # total_by_month = all_movies.groupby(
 #    [all_movies['date'].dt.year, all_movies['date'].dt.month]).sum()
