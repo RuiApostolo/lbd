@@ -12,7 +12,7 @@ import plotly.graph_objects as go
 try:
     with open('database.pkl', mode='rb') as pfile:
         database = pickle.load(pfile)
-    print('Found pickled data.')
+    print('Found pickled data. Creating graphs.')
 except IOError:
     print('No pickled data found.')
     sys.exit(0)
