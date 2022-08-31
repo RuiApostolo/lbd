@@ -97,6 +97,7 @@ fig.write_html("all.html")
 yearly_movies = all_movies[movies['date'].dt.year ==
                            2022].reset_index(drop=True)
 yearly_movies['average'] = yearly_movies['length'].expanding().mean()
+print(yearly_movies[-20:])
 
 yearly = go.Figure()
 yearly.add_trace(go.Scatter(
