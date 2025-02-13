@@ -1,0 +1,11 @@
+black
+bs4
+datetime
+flake8
+flake8-pyproject
+html5lib
+matplotlib
+pandas
+plotly
+requests
+tqdm
