@@ -49,7 +49,7 @@ fig.add_trace(
     go.Scatter(
         x=movies["date"],
         y=movies["average"],
-        name="Comulative average",
+        name="Cumulative average",
     )
 )
 # add line to legend
@@ -158,7 +158,7 @@ ax.bar(
 )
 ax.set_xlabel("Month")
 ax.set_ylabel("Time in minutes")
-ax.set_title("Comulative watch time per month")
+ax.set_title("Cumulative watch time per month")
 #  ax.set_xticks(ax.get_xticks()[1:])
 ax.xaxis.set_major_formatter(mdates.DateFormatter("%b, %Y"))
 ax.xaxis.set_major_locator(mdates.MonthLocator(interval=2))
